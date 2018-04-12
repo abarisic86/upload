@@ -19,7 +19,6 @@ app.post('/api/v1/upload/:imageId', (req, res, next) => {
       if (!fileData) {
         fileData = [data]
       } else {
-        // TODO - should append
         fileData.concat([data])
       }
     })
@@ -66,5 +65,4 @@ module.exports = app
 
 // TODO:
 // move to slower storage after upload to Redis
-// use hget / hset and create a time-stamped photo album
 // decentralize image processing with http://aheckmann.github.io/gm/
