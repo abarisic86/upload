@@ -40,5 +40,5 @@ describe('POST /api/v1/upload', () => {
 // TODO
 // uploading wrong file type
 // try delete with unknown id
-// image to small
+// image too small
 // image too large
